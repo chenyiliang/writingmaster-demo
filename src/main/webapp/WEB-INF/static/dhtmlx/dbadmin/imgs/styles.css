@@ -1,0 +1,10 @@
+.info_message{
+    padding:2px 2px 2px 20px;
+    font-family:Tahoma;
+    font-size:10pt;
+    color:black;
+}
+
+div.gridbox table.hdr td.grid_hdr_editable {
+    -moz-user-select:text;
+}
