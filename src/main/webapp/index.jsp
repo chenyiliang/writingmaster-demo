@@ -11,19 +11,54 @@
 <base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>登陆</title>
+<link rel="stylesheet" type="text/css"
+	href="/static/planeui/css/planeui.css" />
+<link rel="stylesheet" type="text/css"
+	href="/static/planeui/css/login.css" />
 </head>
 <body>
-	<div>${shiroLoginFailure }</div>
-	<form method="post" action="login">
-		<p>
-			用户名：<input type="text" name="username">
-		</p>
-		<p>
-			密码：<input type="password" name="password">
-		</p>
-		<p>
-			<input type="submit" value="登录">
-		</p>
-	</form>
+	<a name="top"></a>
+	<div class="pui-layout pui-flexbox pui-flex-column login-layout">
+		<div class="pui-layout pui-flex login-main">
+			<div
+				class="pui-layout pui-layout-fixed pui-layout-fixed-1200 login-main-con">
+				<div class="login-panel">
+					<form class="pui-form login-form" action="/login" method="post">
+						<div class="pui-form-group">
+							<h1 class="pui-text-white pui-text-normal">
+								<i class="planeui-logo-2x pui-text-xxxxxl"></i> 登录 Login
+							</h1>
+							<div role="username">
+								<input type="text" name="username" maxlength="16"
+									class="pui-unbordered" placeholder="用户名" /> <i
+									class="fa fa-user pui-text-blue"></i>
+							</div>
+						</div>
+						<div class="pui-form-group">
+							<div role="password">
+								<input type="password" name="password" maxlength="16"
+									class="pui-unbordered" placeholder="密码" /> <i
+									class="fa fa-lock pui-text-blue"></i>
+							</div>
+						</div>
+						<div class="pui-form-group">
+							<div role="vcode">
+								<input type="text" name="vcode" maxlength="4"
+									class="pui-unbordered" placeholder="验证码" /> <i
+									class="fa fa-shield pui-text-blue"></i> <img
+									src="/static/planeui/images/captcha.png" id="vcode-img" />
+							</div>
+						</div>
+						<div class="pui-form-group">
+							<input type="submit" name="submit"
+								class="pui-btn pui-btn-default pui-bg-blue-800 pui-unbordered"
+								value="登录" /> <span><a href="#"
+								class="pui-text-white pui-text-xs">忘记密码？</a></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

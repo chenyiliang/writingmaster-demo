@@ -92,6 +92,7 @@
 				/index.jsp = anon
 				/login = authc
 				/logout = logout
+				/static/** = anon
 				/** = user
 			</value>
 		</property>
