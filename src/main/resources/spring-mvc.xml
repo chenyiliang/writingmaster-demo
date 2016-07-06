@@ -23,4 +23,13 @@
 	<mvc:default-servlet-handler />
 	<mvc:resources location="/WEB-INF/static/" mapping="/static/**" />
 
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.support.StandardServletMultipartResolver" />
+
 </beans>
