@@ -48,8 +48,10 @@
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
-	<!-- <filter-mapping> <filter-name>shiroFilter</filter-name> <url-pattern>/*</url-pattern> 
-		</filter-mapping> -->
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	<!-- Shiro安全过滤器结束 -->
 
 	<!-- Spring MVC 分发器开始 -->
