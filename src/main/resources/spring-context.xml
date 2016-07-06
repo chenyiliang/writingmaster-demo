@@ -19,4 +19,9 @@
 
 	<context:property-placeholder location="classpath:jdbc.properties"
 		ignore-unresolvable="true" />
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="classpath:messages" />
+	</bean>
 </beans>
