@@ -22,6 +22,7 @@
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
 	<mvc:resources location="/WEB-INF/static/" mapping="/static/**" />
+	<mvc:view-controller path="/login" view-name="redirect:/" />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
