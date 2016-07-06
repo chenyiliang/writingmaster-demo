@@ -102,7 +102,7 @@
 			<value>
 				/ = anon
 				/index.jsp = anon
-				/login = authc
+				/login = captchaVali,authc
 				/logout = logout
 				/static/** = anon
 				/captcha.jpg = captchaGen

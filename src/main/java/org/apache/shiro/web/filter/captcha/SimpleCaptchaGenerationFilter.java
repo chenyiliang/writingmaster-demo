@@ -38,7 +38,7 @@ public class SimpleCaptchaGenerationFilter extends OncePerRequestFilter {
 			String captcha = simpleCaptcha.generateVerifyCode(4);
 			// 存入会话session
 			HttpSession session = req.getSession();
-			session.setAttribute("captcha", captcha.toLowerCase());
+			session.setAttribute("realCaptcha", captcha.toLowerCase());
 			// 生成图片
 			int w = 200, h = 45;
 			simpleCaptcha.outputImage(w, h, response.getOutputStream(), captcha);

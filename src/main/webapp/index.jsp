@@ -43,7 +43,7 @@
 						</div>
 						<div class="pui-form-group">
 							<div role="vcode">
-								<input type="text" name="vcode" maxlength="4"
+								<input type="text" name="captcha" maxlength="4"
 									class="pui-unbordered" placeholder="验证码" /> <i
 									class="fa fa-shield pui-text-blue"></i> <img src="/captcha.jpg"
 									id="vcode-img" width="100px" />
