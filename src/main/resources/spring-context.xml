@@ -16,6 +16,7 @@
 
 	<import resource="classpath:spring-mysql.xml" />
 	<import resource="classpath:spring-shiro.xml" />
+	<import resource="classpath:spring-cache.xml" />
 
 	<context:property-placeholder location="classpath:jdbc.properties"
 		ignore-unresolvable="true" />

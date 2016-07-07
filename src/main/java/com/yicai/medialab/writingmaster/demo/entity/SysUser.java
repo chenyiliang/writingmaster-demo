@@ -13,6 +13,22 @@ public class SysUser {
 	private Date updateTime;
 	private Boolean locked;
 
+	public SysUser() {
+	}
+
+	public SysUser(String id, String username, String password, String passwordSalt, String email, Integer mobilePhone,
+			Date createTime, Date updateTime, Boolean locked) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.passwordSalt = passwordSalt;
+		this.email = email;
+		this.mobilePhone = mobilePhone;
+		this.createTime = createTime;
+		this.updateTime = updateTime;
+		this.locked = locked;
+	}
+
 	public String getId() {
 		return id;
 	}
