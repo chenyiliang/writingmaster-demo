@@ -7,24 +7,37 @@ public class SysUser {
 	private String username;
 	private String password;
 	private String passwordSalt;
+	private String realName;
 	private String email;
-	private Integer mobilePhone;
+	private Integer mobile;
+	private String remarks;
+	private String loginIp;
+	private Date loginTime;
+	private String createBy;
 	private Date createTime;
+	private String updateBy;
 	private Date updateTime;
 	private Boolean locked;
 
 	public SysUser() {
 	}
 
-	public SysUser(String id, String username, String password, String passwordSalt, String email, Integer mobilePhone,
-			Date createTime, Date updateTime, Boolean locked) {
+	public SysUser(String id, String username, String password, String passwordSalt, String realName, String email,
+			Integer mobile, String remarks, String loginIp, Date loginTime, String createBy, Date createTime,
+			String updateBy, Date updateTime, Boolean locked) {
 		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.passwordSalt = passwordSalt;
+		this.realName = realName;
 		this.email = email;
-		this.mobilePhone = mobilePhone;
+		this.mobile = mobile;
+		this.remarks = remarks;
+		this.loginIp = loginIp;
+		this.loginTime = loginTime;
+		this.createBy = createBy;
 		this.createTime = createTime;
+		this.updateBy = updateBy;
 		this.updateTime = updateTime;
 		this.locked = locked;
 	}
@@ -61,6 +74,14 @@ public class SysUser {
 		this.passwordSalt = passwordSalt;
 	}
 
+	public String getRealName() {
+		return realName;
+	}
+
+	public void setRealName(String realName) {
+		this.realName = realName;
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -69,12 +90,44 @@ public class SysUser {
 		this.email = email;
 	}
 
-	public Integer getMobilePhone() {
-		return mobilePhone;
+	public Integer getMobile() {
+		return mobile;
 	}
 
-	public void setMobilePhone(Integer mobilePhone) {
-		this.mobilePhone = mobilePhone;
+	public void setMobile(Integer mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getRemarks() {
+		return remarks;
+	}
+
+	public void setRemarks(String remarks) {
+		this.remarks = remarks;
+	}
+
+	public String getLoginIp() {
+		return loginIp;
+	}
+
+	public void setLoginIp(String loginIp) {
+		this.loginIp = loginIp;
+	}
+
+	public Date getLoginTime() {
+		return loginTime;
+	}
+
+	public void setLoginTime(Date loginTime) {
+		this.loginTime = loginTime;
+	}
+
+	public String getCreateBy() {
+		return createBy;
+	}
+
+	public void setCreateBy(String createBy) {
+		this.createBy = createBy;
 	}
 
 	public Date getCreateTime() {
@@ -83,6 +136,14 @@ public class SysUser {
 
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
+	}
+
+	public String getUpdateBy() {
+		return updateBy;
+	}
+
+	public void setUpdateBy(String updateBy) {
+		this.updateBy = updateBy;
 	}
 
 	public Date getUpdateTime() {
@@ -104,8 +165,10 @@ public class SysUser {
 	@Override
 	public String toString() {
 		return "SysUser [id=" + id + ", username=" + username + ", password=" + password + ", passwordSalt="
-				+ passwordSalt + ", email=" + email + ", mobilePhone=" + mobilePhone + ", createTime=" + createTime
-				+ ", updateTime=" + updateTime + ", locked=" + locked + "]";
+				+ passwordSalt + ", realName=" + realName + ", email=" + email + ", mobile=" + mobile + ", remarks="
+				+ remarks + ", loginIp=" + loginIp + ", loginTime=" + loginTime + ", createBy=" + createBy
+				+ ", createTime=" + createTime + ", updateBy=" + updateBy + ", updateTime=" + updateTime + ", locked="
+				+ locked + "]";
 	}
 
 }

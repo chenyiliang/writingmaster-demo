@@ -19,6 +19,7 @@ public class CachedDao {
 			e.printStackTrace();
 		}
 		System.out.println("返回数据库数据...");
-		return new SysUser(id, "chenyiliang", "8888", null, null, null, null, null, null);
+		return new SysUser(id, "chenyiliang", "8888", null, null, null, null, null, null, null, null, null, null, null,
+				null);
 	}
 }
